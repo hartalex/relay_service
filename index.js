@@ -3,8 +3,10 @@ const wpi = require('wiringpi-node')
 var pins = [0, 2]
 var currentPin = 0
 
-wpi.wiringPiSetupGpio()
-for (var setupPin in pins) {
+wpi.wiringPiSetup()
+for (var i = 0; i < pins.length; i++) {
+  var setupPin = parseInt(pins[i])
+  console.log(setupPin)
   wpi.pinMode(setupPin, wpi.OUTPUT)
   var pinval = wpi.digitalRead(setupPin)
   if (pinval === 0) {
@@ -12,7 +14,8 @@ for (var setupPin in pins) {
     console.log('Pin ' + currentPin + 'is on')
   }
 }
-for (var pin in pins) {
+for (var ii = 0; ii < pins.length; ii++) {
+  var pin = parseInt(pins[ii])
   if (pin === currentPin) {
     wpi.digitalWrite(pin, 1)
   } else {
