@@ -1,0 +1,1 @@
+echo "* * * * *  node /home/pi/relay_service/index.js >> /var/log/relay.log 2>&1 " >> /etc/crontabs/root
