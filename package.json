@@ -1,0 +1,25 @@
+{
+  "name": "relay_service",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "lint": "eslint index.js routes/**",
+    "start": "node index.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "eslint": "^3.16.0",
+    "eslint-config-standard": "^6.2.1",
+    "eslint-plugin-import": "^2.2.0",
+    "eslint-plugin-promise": "^3.4.2",
+    "eslint-plugin-standard": "^2.0.1",
+    "mocha": "^3.2.0",
+    "nyc": "^10.3.2",
+    "simple-mock": "^0.7.3"
+  },
+  "dependencies": {
+    "wiringpi-node": "^2.4.4"
+  }
+}
