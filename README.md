@@ -1,3 +1,5 @@
+[![NSP Status](https://nodesecurity.io/orgs/hartalex/projects/7f76a572-24d8-43ae-a4b7-60e14d106be8/badge)](https://nodesecurity.io/orgs/hartalex/projects/7f76a572-24d8-43ae-a4b7-60e14d106be8)
+
 # relay_service
 
 A relay controller program for switching between the daylight and nightlight led 
